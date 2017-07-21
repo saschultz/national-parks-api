@@ -16,6 +16,15 @@ class HikesController < ApplicationController
     json_response(@hike.park, :created)
   end
 
+  def update
+    @hike = Hike.find(params[:id])
+    if @hike.update!(hike_params)
+      render status: 200, json: {
+        message: 'Hike successfully updated.'
+      }
+    end
+  end
+
   private
   def json_response(object, status = :ok)
     render json: object, status: status
@@ -23,6 +32,6 @@ class HikesController < ApplicationController
 
   def hike_params
     params.permit(:name, :miles, :difficulty)
-  end  
+  end
 
 end
