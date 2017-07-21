@@ -267,7 +267,7 @@
         null,
         null,
         1,
-        0,
+        1,
         null,
         null
       ],
@@ -333,16 +333,16 @@
         null,
         null,
         1,
-        2,
-        2,
-        null,
-        null,
-        1,
-        2,
-        2,
+        3,
         2,
         null,
         null,
+        1,
+        2,
+        2,
+        2,
+        null,
+        null,
         null,
         null,
         null,
@@ -369,13 +369,13 @@
         null,
         null,
         1,
+        null,
+        1,
+        6,
+        null,
         null,
         1,
         5,
-        null,
-        null,
-        1,
-        4,
         null,
         null
       ],
@@ -537,6 +537,19 @@
         null,
         null
       ],
+      "/Users/saschultz/Desktop/national-parks/spec/requests/park_unprocessable_entity_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/saschultz/Desktop/national-parks/spec/requests/patch_hike_spec.rb": [
         1,
         null,
@@ -620,6 +633,6 @@
         null
       ]
     },
-    "timestamp": 1500679757
+    "timestamp": 1500679888
   }
 }
