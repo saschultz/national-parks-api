@@ -7,8 +7,11 @@ describe 'post park route', :type => :request do
   end
 
   it 'returns the location' do
-   expect(JSON.parse(response.body)['location']).to eq "Montana"
- end
+    expect(JSON.parse(response.body)['location']).to eq "Montana"
+  end
 
+  it 'returns created status' do
+    expect(response).to have_http_status 202
+  end
 
 end
