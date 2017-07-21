@@ -36,6 +36,11 @@ class ParksController < ApplicationController
     json_response(@parks)
   end
 
+  def most_hikes
+    @parks = Park.most_hikes
+    json_response(@parks)
+  end
+
   private
 
   def json_response(object, status = :ok)
