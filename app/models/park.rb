@@ -6,6 +6,10 @@ class Park < ApplicationRecord
     self.find_by(location: input)
   end
 
+  def self.random
+    self.all[rand(0..self.count)]
+  end
+
   scope :most_hikes, -> {(
     select("parks.id, parks.name, count(hikes.id) as hikes_count")
     .joins(:hikes)
