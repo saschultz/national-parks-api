@@ -8,7 +8,7 @@
         2,
         2,
         2,
-        null,
+        2,
         null
       ],
       "/Users/saschultz/Desktop/national-parks/spec/rails_helper.rb": [
@@ -307,6 +307,6 @@
         null
       ]
     },
-    "timestamp": 1500665537
+    "timestamp": 1500665579
   }
 }

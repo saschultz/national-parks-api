@@ -1,4 +1,4 @@
 class Hike < ApplicationRecord
   belongs_to :park
-  validates(:name, :miles, presence: true)
+  validates(:name, :miles, :difficulty, presence: true)
 end
