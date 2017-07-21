@@ -263,7 +263,7 @@
       "/Users/saschultz/Desktop/national-parks/app/controllers/application_controller.rb": [
         1,
         1,
-        0,
+        1,
         null,
         null,
         1,
@@ -328,7 +328,7 @@
         null,
         null,
         1,
-        0,
+        1,
         0,
         null,
         null,
@@ -371,7 +371,7 @@
         1,
         null,
         1,
-        4,
+        5,
         null,
         null,
         1,
@@ -475,6 +475,21 @@
         1,
         null,
         1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/saschultz/Desktop/national-parks/spec/requests/exception_get_park_spec.rb": [
+        1,
+        null,
+        1,
+        null,
         1,
         1,
         null,
@@ -605,6 +620,6 @@
         null
       ]
     },
-    "timestamp": 1500679424
+    "timestamp": 1500679613
   }
 }
