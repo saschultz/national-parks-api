@@ -25,6 +25,15 @@ class HikesController < ApplicationController
     end
   end
 
+  def destroy
+    @hike = Hike.find(params[:id])
+    if @hike.destroy
+      render status: 200, json: {
+        message: 'Hike successfully deleted.'
+      }
+    end
+  end
+
   private
   def json_response(object, status = :ok)
     render json: object, status: status
