@@ -284,6 +284,7 @@
       "/Users/saschultz/Desktop/national-parks/app/models/park.rb": [
         1,
         1,
+        1,
         null
       ],
       "/Users/saschultz/Desktop/national-parks/config/routes.rb": [
@@ -296,9 +297,10 @@
         null,
         1,
         2,
+        2,
         null
       ]
     },
-    "timestamp": 1500662649
+    "timestamp": 1500662710
   }
 }
