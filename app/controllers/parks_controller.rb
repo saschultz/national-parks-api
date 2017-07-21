@@ -24,6 +24,11 @@ class ParksController < ApplicationController
     end
   end
 
+  def destroy
+    @park = Park.find(params[:id])
+    @park.destroy
+  end
+
   private
 
   def json_response(object, status = :ok)
