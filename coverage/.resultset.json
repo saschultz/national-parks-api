@@ -6,7 +6,7 @@
         null,
         1,
         2,
-        null,
+        2,
         null,
         null,
         null
@@ -282,7 +282,7 @@
       "/Users/saschultz/Desktop/national-parks/app/models/hike.rb": [
         1,
         1,
-        null,
+        1,
         null
       ],
       "/Users/saschultz/Desktop/national-parks/app/models/park.rb": [
@@ -307,6 +307,6 @@
         null
       ]
     },
-    "timestamp": 1500665449
+    "timestamp": 1500665493
   }
 }
