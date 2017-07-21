@@ -353,9 +353,9 @@
         null,
         null,
         1,
-        0,
-        0,
-        0,
+        1,
+        1,
+        1,
         null,
         null,
         1,
@@ -371,7 +371,7 @@
         1,
         null,
         1,
-        8,
+        9,
         null,
         null,
         1,
@@ -406,7 +406,7 @@
         1,
         null,
         1,
-        0,
+        1,
         null,
         null,
         1,
@@ -558,6 +558,22 @@
         null,
         null
       ],
+      "/Users/saschultz/Desktop/national-parks/spec/requests/get_search_parks_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
       "/Users/saschultz/Desktop/national-parks/spec/requests/hike_unprocessable_entity_spec.rb": [
         1,
         null,
@@ -668,6 +684,6 @@
         null
       ]
     },
-    "timestamp": 1500680438
+    "timestamp": 1500680562
   }
 }
