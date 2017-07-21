@@ -5,10 +5,10 @@ class HikesController < ApplicationController
     json_response(@park.hikes)
   end
 
-  # def show
-  #   @hike = Hike.find(params[:id])
-  #   json_response(@hike)
-  # end
+  def show
+    @hike = Hike.find(params[:id])
+    json_response(@hike)
+  end
 
   private
   def json_response(object, status = :ok)
