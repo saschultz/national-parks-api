@@ -11,4 +11,8 @@ describe 'get park by id route', :type => :request do
     expect(JSON.parse(response.body)['location']).to eq 'Oregon'
   end
 
+  it 'returns status code 200' do
+    expect(response).to have_http_status(:success)
+  end
+
 end
