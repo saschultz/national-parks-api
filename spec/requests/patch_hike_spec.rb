@@ -12,4 +12,8 @@ describe "patch hikes route", :type => :request do
     expect(JSON.parse(response.body)['message']).to eq "Hike successfully updated."
   end
 
+  it 'returns status code 200' do
+    expect(response).to have_http_status :success
+  end
+
 end
