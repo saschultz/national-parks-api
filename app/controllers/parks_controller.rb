@@ -15,6 +15,15 @@ class ParksController < ApplicationController
     json_response(@park, :accepted)
   end
 
+  def update
+    @park = Park.find(params[:id])
+    if @park.update!(park_params)
+      render status: 200, json: {
+        message: 'Park was successfully updated.'
+      }
+    end
+  end
+
   private
 
   def json_response(object, status = :ok)
