@@ -1,4 +1,4 @@
 class Park < ApplicationRecord
   has_many :attractions, dependent: :destroy
-  validates(:name, presence: true)
+  validates(:name, :location, presence: true)
 end
