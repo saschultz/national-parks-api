@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   resources :parks do
     collection do
       get :search
+      get :most_hikes
     end
     resources :hikes
   end
