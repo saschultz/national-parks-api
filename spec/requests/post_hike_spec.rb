@@ -11,4 +11,9 @@ describe 'post hike route', :type => :request do
     expect(JSON.parse(response.body)['location']).to eq "Montana"
   end
 
+  it 'returns created status' do
+    expect(response).to have_http_status 201
+  end
+
+
 end

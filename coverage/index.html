@@ -14,26 +14,26 @@
       <img src="./assets/0.10.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-07-21T16:06:55-07:00">2017-07-21T16:06:55-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-07-21T16:07:56-07:00">2017-07-21T16:07:56-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="yellow">85.64%</span></span>
+    (<span class="covered_percent"><span class="yellow">85.79%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.01
+         1.04
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>30</b> files in total.
-    <b>188</b> relevant lines. 
-    <span class="green"><b>161</b> lines covered</span> and
+    <b>190</b> relevant lines. 
+    <span class="green"><b>163</b> lines covered</span> and
     <span class="red"><b>27</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -87,7 +87,7 @@
         <td>24</td>
         <td>16</td>
         <td>8</td>
-        <td>0.8</td>
+        <td>1.0</td>
       </tr>
       
       <tr>
@@ -333,11 +333,11 @@
       <tr>
         <td class="strong"><a href="#053882c758bd436e8ca15c99e1a52e229a5b601b" class="src_link" title="spec/requests/post_hike_spec.rb">spec/requests/post_hike_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>14</td>
-        <td>7</td>
-        <td>7</td>
+        <td>19</td>
+        <td>9</td>
+        <td>9</td>
         <td>0</td>
-        <td>1.0</td>
+        <td>1.2</td>
       </tr>
       
       <tr>
@@ -617,20 +617,20 @@
           <code class="ruby">  def create</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="14">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="14">
+          <span class="hits">2</span>
           
           <code class="ruby">    @park = Park.find(params[:park_id])</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="15">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="15">
+          <span class="hits">2</span>
           
           <code class="ruby">    @hike = @park.hikes.create!(hike_params)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="16">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="16">
+          <span class="hits">2</span>
           
           <code class="ruby">    json_response(@hike.park, :created)</code>
         </li>
@@ -767,8 +767,8 @@
           <code class="ruby">  def json_response(object, status = :ok)</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="39">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="4" data-linenumber="39">
+          <span class="hits">4</span>
           
           <code class="ruby">    render json: object, status: status</code>
         </li>
@@ -791,8 +791,8 @@
           <code class="ruby">  def hike_params</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="43">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="43">
+          <span class="hits">2</span>
           
           <code class="ruby">    params.permit(:name, :miles, :difficulty)</code>
         </li>
@@ -3501,8 +3501,8 @@
     <h3>spec/requests/post_hike_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>7</b> relevant lines. 
-      <span class="green"><b>7</b> lines covered</span> and
+      <b>9</b> relevant lines. 
+      <span class="green"><b>9</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -3540,14 +3540,14 @@
           <code class="ruby">  before do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="6">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="6">
+          <span class="hits">2</span>
           
           <code class="ruby">    park = Park.create(name: &#39;Glacier&#39;, location: &#39;Montana&#39;, free_entrance_days: &#39;Everyday!&#39;, id: 1)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="7">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="7">
+          <span class="hits">2</span>
           
           <code class="ruby">    post &quot;/parks/#{park.id}/hikes&quot;, params: { name: &#39;Beauty&#39;, miles: 3.3, difficulty: &#39;easy&#39;, park_id: 1 }</code>
         </li>
@@ -3588,7 +3588,37 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="14">
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &#39;returns created status&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(response).to have_http_status 201</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
           
           
           <code class="ruby">end</code>
