@@ -300,9 +300,9 @@
         null,
         null,
         1,
-        0,
-        0,
-        0,
+        1,
+        1,
+        1,
         null,
         null,
         null,
@@ -453,6 +453,22 @@
         2,
         null
       ],
+      "/Users/saschultz/Desktop/national-parks/spec/requests/delete_hike_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/saschultz/Desktop/national-parks/spec/requests/delete_park_spec.rb": [
         1,
         null,
@@ -589,6 +605,6 @@
         null
       ]
     },
-    "timestamp": 1500679139
+    "timestamp": 1500679424
   }
 }
