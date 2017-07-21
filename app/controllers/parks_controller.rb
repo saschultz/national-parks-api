@@ -10,8 +10,18 @@ class ParksController < ApplicationController
     json_response(@park)
   end
 
+  def create
+    @park = Park.create!(park_params)
+    json_response(@park, :accepted)
+  end
+
   private
+
   def json_response(object, status = :ok)
     render json: object.as_json(include: :hikes), status: status
+  end
+
+  def park_params
+    params.permit(:name, :location, :free_entrance_days)
   end
 end
