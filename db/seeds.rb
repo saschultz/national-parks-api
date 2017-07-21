@@ -1,7 +1,27 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+class Seed
+
+  def self.begin
+    seed = Seed.new
+    seed.generate_parks
+  end
+
+  def generate_parks
+    10.times do |i|
+      park = Park.create!(
+        name: Faker::Space.planet,
+        location: Faker::Space.galaxy,
+        free_entrance_days: 'Martin Luther King Jr. Day, Presidents Day, Weekends of National Park Week, National Park Service Birthday, National Public Lands Day, Veterans Day Weekend'
+      )
+      5.times do |i|
+        park.hikes.create!(
+          name: Faker::Ancient.hero + ' ' + 'hike',
+          miles: Faker::Number.decimal(1),
+          difficulty: 'easy',
+          park_id: Faker::Number.between(1,10)
+        )
+      end
+    end
+  end
+end
+
+Seed.begin
