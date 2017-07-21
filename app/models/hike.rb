@@ -1,4 +1,4 @@
-class Attraction < ApplicationRecord
+class Hike < ApplicationRecord
   belongs_to :park
-  validates(:hikes, :wildlife, :natural_wonders, presence: true)
+  # validates(:hikes, :wildlife, :natural_wonders, presence: true)
 end
