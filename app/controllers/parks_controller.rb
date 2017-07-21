@@ -29,6 +29,13 @@ class ParksController < ApplicationController
     @park.destroy
   end
 
+  # CUSTOM ROUTES
+  def search
+    location = params[:location]
+    @parks = Park.search(location)
+    json_response(@parks)
+  end
+
   private
 
   def json_response(object, status = :ok)
