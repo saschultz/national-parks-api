@@ -364,14 +364,14 @@
         null,
         null,
         1,
-        0,
-        0,
+        1,
+        1,
         null,
         null,
         1,
         null,
         1,
-        10,
+        11,
         null,
         null,
         1,
@@ -410,7 +410,7 @@
         null,
         null,
         1,
-        0,
+        1,
         null,
         null,
         1,
@@ -558,6 +558,22 @@
         null,
         null
       ],
+      "/Users/saschultz/Desktop/national-parks/spec/requests/get_random_park_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
       "/Users/saschultz/Desktop/national-parks/spec/requests/get_search_parks_spec.rb": [
         1,
         null,
@@ -688,6 +704,6 @@
         null
       ]
     },
-    "timestamp": 1500680598
+    "timestamp": 1500680973
   }
 }
