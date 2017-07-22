@@ -280,8 +280,8 @@
         null,
         null,
         1,
-        0,
-        0,
+        1,
+        1,
         null,
         null,
         1,
@@ -310,7 +310,7 @@
         null,
         1,
         1,
-        5,
+        6,
         null,
         null,
         1,
@@ -490,6 +490,23 @@
         null,
         1,
         null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/saschultz/Desktop/national-parks/spec/requests/get_hike_by_id_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
         1,
         1,
         null,
@@ -724,6 +741,6 @@
         null
       ]
     },
-    "timestamp": 1500681481
+    "timestamp": 1500681650
   }
 }
