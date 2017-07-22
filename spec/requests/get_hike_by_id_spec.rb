@@ -12,4 +12,8 @@ describe 'get hike by id route', :type => :request do
     expect(JSON.parse(response.body)['name']).to eq 'Oregon Hike'
   end
 
+  it 'returns status code 200' do
+    expect(response).to have_http_status(:success)
+  end
+
 end
